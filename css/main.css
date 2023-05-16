@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.navi{
+    width: 960px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #222;
+}
+.navi ul{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: beige;
+}
+.navi ul li{
+    text-align: center;
+    display:inline-block;
+    width: 150px;
+    /* background-color: azure; */
+    padding: 10px;
+}
+.navi a:link, .navi a:visited{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+}
+.navi a:hover, .navi a:focus{
+    background-color: black;
+    color: white;
+}
+.navi a:active{
+    background-color: red;
+}
+.contents{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+
+.contents :nth-child(3){
+    background-color: aquamarine;
+}
+.contents p:nth-of-type(3){
+    background-color: cadetblue;
+}
+/* 열에 번갈아 가며 배경색 적용하기 */
+/* 수식 사용해 위치 지정하기 */
+
+#container{
+    text-align: center;
+    color: black;
+    /* background-color: bisque; */
+}
+table, td, th{
+    border: 1px solid #ccc;
+}
+table{
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-collapse: collapse; /*선 한줄*/
+}
+td{
+    text-align: left;
+    padding: 10px;
+}
+table tr:nth-of-type(2n+1){
+    background-color: coral;
+
+}
+/* 짝수번째 적용2n,홀수+1 */
+.container2{
+    width: 960px;
+    margin: 0 auto;   
+}
+.container2 ul li{
+    margin: 15px;
+}
+.container2 ul li.new::after{
+    content: "NEW!!";
+    font-size: x-small;
+    padding: 2px 4px;
+    margin: 0 10px;
+    background-color: red;
+    border-radius: 2px;
+    color: white;
+}
+.container2 ul li.hi::before{
+    content: "hi!!";
+    font-size: x-small;
+    padding: 2px 4px;
+    margin: 0 10px;
+    background-color: rgb(0, 119, 128);
+    border-radius: 10px;
+    color: white;
+
+}
